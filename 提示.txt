@@ -1,0 +1,139 @@
+github
+344943259@qq.com
+code niuming1989
+
+新浪云上线(前后端未分离)
+先按教程上传部署node.js服务器
+参考网址https://blog.csdn.net/SilenceJude/article/details/85125765
+vue前端:
+1.main.js文件更改axios的默认值,即注释之前的默认值设定"axios.defaults.baseURL=127.0.0.1:端口号"
+2.输入npm run build打包
+3.将打包产生的dist文件夹里的文件复制到服务器端的public文件下(静态委托的文件)
+4.重新上传
+5.输入新浪云的域名就可进入主页
+
+
+git使用前配置
+ git config --global  user.name 用户名
+ git config --global  user.email  邮箱名称
+ git config --list    查看所有配置
+5.git管理命令
+ git init  初始化git仓库，使用git管理当前目录(工作目录)
+ git status  查看文件的状态(是否被跟踪，是否修改)
+ git add 文件名称   追踪文件(放入到暂存区中)
+ git commit -m 自定义说明   把暂存区中的内容提交到本地仓库
+ git log  查看本地仓库中所有的提交记录
+ git reset --hard  编号   向本地仓库中提取信息
+ git reflog   显示所有的提交和恢复记录
+ git checkout 文件名称  从暂存区中恢复文件
+ git rm --cached 文件名称   删除暂存区中文件
+ git push origin master
+
+
+ 总结用git remote add origin https://github.com/niumingweb/study.git
+
+
+ git 分支
+
+ git branch  查看分支
+ git checkout -b dev  创建并切换到分支 dev
+ 等同于git branch dev    创建分子 dev
+       git checkout dev  切换到分支dev
+ 
+ git branch  查看分支
+
+码云使用
+https://blog.csdn.net/ai1362425349/article/details/82119889
+Are you sure you want to continue connecting (yes/no)? yes
+
+前端
+User_log第200行换成注册并直接登录跳转
+轮播
+注册页面
+详情页面
+详情页面 动态数据
+补全主页
+搜索
+主页动态数据 
+购物车
+分页
+
+index  500line  v-for  出不来
+
+后端
+路由
+注册路由
+详情路由
+商品列表路由（待定）
+
+
+
+数据库
+主页商品
+商品详情
+
+04  index
+05  details  product
+vue 轮播
+https://ask.csdn.net/questions/657013
+/(?!^(\d+|[a-zA-Z]+|[~!@#$%^&*?]+)$)^[\w~!@#$%^&*?]{7,20}$/
+
+传参
+https://blog.csdn.net/heshuaicsdn/article/details/88578899
+
+vuex
+vuex简单应用----点击登录将user用户名传递给另一个页面
+https://blog.csdn.net/weixin_41111987/article/details/84617011
+
+vue模拟登陆功能，vuex登陆后显示用户信息
+https://blog.csdn.net/zezeadede555/article/details/88773583
+
+vuex state及mapState的基础用法详解
+https://www.jb51.net/article/138460.htm
+
+Vue+Element+computed实现购物车
+https://www.cnblogs.com/CinderellaStory/p/10546263.html
+
+localstorage的使用方法
+https://www.cnblogs.com/houzheng/p/9067110.html
+
+用session和vuex实现刷新不丢失数据（参考）
+https://www.cnblogs.com/lalalagq/p/9901150.html
+https://www.cnblogs.com/goloving/p/9074574.html
+https://www.cnblogs.com/zou1234/p/9289046.html
+
+
+vscode react中标签自动补全 vscode jsx语法自动补全html标签
+
+https://blog.csdn.net/shaleilei/article/details/82984228
+
+刷新页面方法
+https://www.cnblogs.com/yinn/p/9056731.html
+
+vue打包
+https://blog.csdn.net/qq_41115965/article/details/80796310
+
+vue打包测试
+https://blog.csdn.net/qq_28584685/article/details/82252543
+
+端框架Vue（12）——如何将 vue-cli 项目打包压缩（npm run build）后放到服务器(参考)
+https://blog.csdn.net/DOCALLEN/article/details/75565775
+
+新浪云node.js部署
+https://blog.csdn.net/SilenceJude/article/details/85125765
+
+手机响导航栏应式布局
+https://blog.csdn.net/weixin_42750760/article/details/81221388
+
+
+
+微软雅黑
+大标题2号  小标题4号   加粗加黑
+内容小4 小5
+
+
+dataset用法
+
+<mt-button @click="deleteItem" :data-id="item.id">删除</mt-button>
+//(3)将当前商品id传递函数??
+        var id=e.target.dataset.id
